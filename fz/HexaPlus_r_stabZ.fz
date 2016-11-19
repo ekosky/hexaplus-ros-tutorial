@@ -1,0 +1,42 @@
+#
+STABZ_NFAR_01 if uavZ_error is NFAR and speed_uavZ is PFAST then Othrottle is NMAX
+STABZ_NFAR_02 if uavZ_error is NFAR and speed_uavZ is PSLOW then Othrottle is NMAX
+STABZ_NFAR_03 if uavZ_error is NFAR and speed_uavZ is ZERO   then Othrottle is NMAX
+STABZ_NFAR_04 if uavZ_error is NFAR and speed_uavZ is NSLOW then Othrottle is NMAX
+STABZ_NFAR_05 if uavZ_error is NFAR and speed_uavZ is NFAST then Othrottle is NMAX
+#
+STABZ_NMID_01 if uavZ_error is NMID and speed_uavZ is PFAST then Othrottle is NMAX
+STABZ_NMID_02 if uavZ_error is NMID and speed_uavZ is PSLOW then Othrottle is NMAX
+STABZ_NMID_03 if uavZ_error is NMID and speed_uavZ is ZERO   then Othrottle is NMID
+STABZ_NMID_04 if uavZ_error is NMID and speed_uavZ is NSLOW then Othrottle is NMID 
+STABZ_NMID_05 if uavZ_error is NMID and speed_uavZ is NFAST then Othrottle is NMID
+#
+STABZ_NNEAR_01 if uavZ_error is NNEAR and speed_uavZ is PFAST then Othrottle is NMID
+STABZ_NNEAR_02 if uavZ_error is NNEAR and speed_uavZ is PSLOW then Othrottle is NMID
+STABZ_NNEAR_03 if uavZ_error is NNEAR and speed_uavZ is ZERO   then Othrottle is NMIN
+STABZ_NNEAR_04 if uavZ_error is NNEAR and speed_uavZ is NSLOW then Othrottle is NMIN
+STABZ_NNEAR_05 if uavZ_error is NNEAR and speed_uavZ is NFAST then Othrottle is NMIN 
+#
+STABZ_ZERO_01 if uavZ_error is ZERO and speed_uavZ is PFAST then Othrottle is NMIN
+STABZ_ZERO_02 if uavZ_error is ZERO and speed_uavZ is PSLOW then Othrottle is NMIN 
+STABZ_ZERO_03 if uavZ_error is ZERO and speed_uavZ is ZERO   then Othrottle is ZERO
+STABZ_ZERO_04 if uavZ_error is ZERO and speed_uavZ is NSLOW then Othrottle is PMIN 
+STABZ_ZERO_05 if uavZ_error is ZERO and speed_uavZ is NFAST then Othrottle is PMIN
+#
+STABZ_PNEAR_01 if uavZ_error is PNEAR and speed_uavZ is NFAST then Othrottle is PMID
+STABZ_PNEAR_02 if uavZ_error is PNEAR and speed_uavZ is NSLOW then Othrottle is PMID
+STABZ_PNEAR_03 if uavZ_error is PNEAR and speed_uavZ is ZERO   then Othrottle is PMID
+STABZ_PNEAR_04 if uavZ_error is PNEAR and speed_uavZ is PSLOW then Othrottle is PMIN
+STABZ_PNEAR_05 if uavZ_error is PNEAR and speed_uavZ is PFAST then Othrottle is PMIN 
+#
+STABZ_PMID_01 if uavZ_error is PMID and speed_uavZ is NFAST then Othrottle is PMAX
+STABZ_PMID_02 if uavZ_error is PMID and speed_uavZ is NSLOW then Othrottle is PMAX
+STABZ_PMID_03 if uavZ_error is PMID and speed_uavZ is ZERO   then Othrottle is PMID
+STABZ_PMID_04 if uavZ_error is PMID and speed_uavZ is PSLOW then Othrottle is PMID 
+STABZ_PMID_05 if uavZ_error is PMID and speed_uavZ is PFAST then Othrottle is PMID
+
+STABZ_PFAR_01 if uavZ_error is PFAR and speed_uavZ is NFAST then Othrottle is PMAX
+STABZ_PFAR_02 if uavZ_error is PFAR and speed_uavZ is NSLOW then Othrottle is PMAX
+STABZ_PFAR_03 if uavZ_error is PFAR and speed_uavZ is ZERO   then Othrottle is PMAX
+STABZ_PFAR_04 if uavZ_error is PFAR and speed_uavZ is PSLOW then Othrottle is PMAX
+STABZ_PFAR_05 if uavZ_error is PFAR and speed_uavZ is PFAST then Othrottle is PMAX

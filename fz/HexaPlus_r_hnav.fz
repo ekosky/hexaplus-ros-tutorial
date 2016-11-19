@@ -1,0 +1,21 @@
+#
+HSPEED_FAR_01 if uav_goal_dist is FAR and speed_goal is WARP then Opitch_nav is PMAX
+HSPEED_FAR_02 if uav_goal_dist is FAR and speed_goal is FAST then Opitch_nav is PMAX
+HSPEED_FAR_03 if uav_goal_dist is FAR and speed_goal is SLOW then Opitch_nav is PMAX
+HSPEED_FAR_04 if uav_goal_dist is FAR and speed_goal is ZERO then Opitch_nav is PMAX
+
+HSPEED_MID_05 if uav_goal_dist is MID and speed_goal is WARP then Opitch_nav is PMID
+HSPEED_MID_06 if uav_goal_dist is MID and speed_goal is FAST then Opitch_nav is PMAX
+HSPEED_MID_07 if uav_goal_dist is MID and speed_goal is SLOW then Opitch_nav is PMAX
+HSPEED_MID_08 if uav_goal_dist is MID and speed_goal is ZERO then Opitch_nav is PMAX
+#
+HSPEED_NEAR_09 if uav_goal_dist is NEAR and speed_goal is WARP then Opitch_nav is PMIN 
+HSPEED_NEAR_10 if uav_goal_dist is NEAR and speed_goal is FAST then Opitch_nav is PMID
+HSPEED_NEAR_11 if uav_goal_dist is NEAR and speed_goal is SLOW then Opitch_nav is PMID
+HSPEED_NEAR_12 if uav_goal_dist is NEAR and speed_goal is ZERO then Opitch_nav is PMID
+#
+HSPEED_ZERO_13 if uav_goal_dist is ZERO and speed_goal is WARP then Opitch_nav is NMAX
+HSPEED_ZERO_14 if uav_goal_dist is ZERO and speed_goal is FAST then Opitch_nav is NMID
+HSPEED_ZERO_15 if uav_goal_dist is ZERO and speed_goal is SLOW then Opitch_nav is NMIN
+HSPEED_ZERO_16 if uav_goal_dist is ZERO and speed_goal is ZERO then Opitch_nav is ZERO
+

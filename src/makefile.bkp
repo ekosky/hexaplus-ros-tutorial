@@ -1,0 +1,26 @@
+CFLAGS =  -I../remoteApi -I../include  -DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255
+
+EXTAPI = ../remoteApi/extApi.o ../remoteApi/extApiPlatform.o fuzzy.o HexaPlus.o HexaPlusPanel.o HexaPlusKsMap.o navigation.o
+
+
+OS = $(shell uname -s)
+ifeq ($(OS), Linux)
+	CFLAGS += -D__linux
+else
+	CFLAGS += -D__APPLE__
+endif
+
+all: 
+	@rm -f bin/*.*
+	@rm -f *.o 
+	gcc $(CFLAGS) -c ../remoteApi/extApi.c -o ../remoteApi/extApi.o
+	gcc $(CFLAGS) -c ../remoteApi/extApiPlatform.c -o ../remoteApi/extApiPlatform.o
+	gcc $(CFLAGS) -c fuzzy.cpp -o fuzzy.o
+	gcc $(CFLAGS) -c HexaPlus.cpp -o HexaPlus.o
+	gcc $(CFLAGS) -c HexaPlusPanel.cpp -o HexaPlusPanel.o
+	gcc $(CFLAGS) -c HexaPlusKsMap.cpp -o HexaPlusKsMap.o
+	gcc $(CFLAGS) -c navigation.cpp -o navigation.o
+	gcc $(CFLAGS) -c HexaPlusMainCtrl.cpp -o HexaPlusMainCtrl.o
+	@mkdir -p bin
+	g++ $(EXTAPI) HexaPlusMainCtrl.o -o bin/HexaPlusMainCtrl -lpthread
+

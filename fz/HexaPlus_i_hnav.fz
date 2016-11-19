@@ -1,0 +1,10 @@
+uav_goal_dist ZERO -0.0001 0   0   0.3 
+uav_goal_dist NEAR  0      0.3 0.3 0.6 
+uav_goal_dist MID   0.3    1.0 1.0 2.0 
+uav_goal_dist FAR   1.0    2.0 1000 1001 
+#
+speed_goal ZERO -0.001 0   0   0.1
+speed_goal SLOW  0  0.5 0.5 0.6
+speed_goal FAST  0.5   0.6 0.6 0.8
+speed_goal WARP  0.6   0.8 0.8   1000 
+

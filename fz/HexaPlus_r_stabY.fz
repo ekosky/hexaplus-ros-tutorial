@@ -1,0 +1,43 @@
+STABY_PFAR_01 if pitch_error is PFAR and accelX is PFAST then Opitch is NMAX 
+STABY_PFAR_02 if pitch_error is PFAR and accelX is PSLOW then Opitch is NMAX
+STABY_PFAR_03 if pitch_error is PFAR and accelX is ZERO   then Opitch is NMAX
+STABY_PFAR_04 if pitch_error is PFAR and accelX is NSLOW then Opitch is NMAX 
+STABY_NFAR_05 if pitch_error is PFAR and accelX is NFAST then Opitch is NMAX 
+
+STABY_PNEAR_01 if pitch_error is PNEAR and accelX is PFAST then Opitch is NMIN
+STABY_PNEAR_02 if pitch_error is PNEAR and accelX is PSLOW then Opitch is NMIN
+STABY_PNEAR_03 if pitch_error is PNEAR and accelX is ZERO   then Opitch is NMID
+STABY_PNEAR_04 if pitch_error is PNEAR and accelX is NSLOW then Opitch is NMID 
+STABY_PNEAR_05 if pitch_error is PNEAR and accelX is NFAST then Opitch is NMID 
+
+STABY_PCLOSE_01 if pitch_error is PCLOSE and accelX is PFAST then Opitch is ZERO 
+STABY_PCLOSE_02 if pitch_error is PCLOSE and accelX is PSLOW then Opitch is ZERO 
+STABY_PCLOSE_03 if pitch_error is PCLOSE and accelX is ZERO   then Opitch is NMIN
+STABY_PCLOSE_04 if pitch_error is PCLOSE and accelX is NSLOW then Opitch is NMIN 
+STABY_PCLOSE_05 if pitch_error is PCLOSE and accelX is NFAST then Opitch is NMID
+
+STABY_ZERO_01 if pitch_error is ZERO and accelX is PFAST then Opitch is PMIN
+STABY_ZERO_02 if pitch_error is ZERO and accelX is PSLOW then Opitch is ZERO 
+STABY_ZERO_03 if pitch_error is ZERO and accelX is ZERO   then Opitch is ZERO
+STABY_ZERO_04 if pitch_error is ZERO and accelX is NSLOW then Opitch is ZERO 
+STABY_ZERO_05 if pitch_error is ZERO and accelX is NFAST then Opitch is NMIN
+
+STABY_NCLOSE_01 if pitch_error is NCLOSE and accelX is NFAST then Opitch is ZERO
+STABY_NCLOSE_02 if pitch_error is NCLOSE and accelX is NSLOW then Opitch is ZERO 
+STABY_NCLOSE_03 if pitch_error is NCLOSE and accelX is ZERO   then Opitch is PMIN 
+STABY_NCLOSE_04 if pitch_error is NCLOSE and accelX is PSLOW then Opitch is PMIN
+STABY_NCLOSE_05 if pitch_error is NCLOSE and accelX is PFAST then Opitch is PMID
+
+STABY_NNEAR_01 if pitch_error is NNEAR and accelX is PFAST then Opitch is PMID 
+STABY_NNEAR_02 if pitch_error is NNEAR and accelX is PSLOW then Opitch is PMID
+STABY_NNEAR_03 if pitch_error is NNEAR and accelX is ZERO   then Opitch is PMID
+STABY_NNEAR_04 if pitch_error is NNEAR and accelX is NSLOW then Opitch is PMIN 
+STABY_NNEAR_05 if pitch_error is NNEAR and accelX is NFAST then Opitch is PMIN 
+
+STABY_NFAR_01 if pitch_error is NFAR and accelX is PFAST then Opitch is PMAX
+STABY_NFAR_02 if pitch_error is NFAR and accelX is PSLOW then Opitch is PMAX
+STABY_NFAR_03 if pitch_error is NFAR and accelX is ZERO   then Opitch is PMAX
+STABY_NFAR_04 if pitch_error is NFAR and accelX is NSLOW then Opitch is PMAX
+STABY_NFAR_05 if pitch_error is NFAR and accelX is NFAST then Opitch is PMAX
+
+

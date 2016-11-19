@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libHexaPlus.so -o devel/lib/libHexaPlus.so CMakeFiles/HexaPlus.dir/src/HexaPlus.cpp.o 

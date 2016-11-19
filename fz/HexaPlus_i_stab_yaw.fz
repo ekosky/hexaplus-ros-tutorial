@@ -1,0 +1,13 @@
+uav_goal_dist ZERO -1001 0.0 0.0 0.5 
+uav_goal_dist NEAR  0.0 0.5 0.5 1.5 
+uav_goal_dist MID   0.5 1.5 1.5 3
+uav_goal_dist FAR   1.5 3 3 1001 
+#
+yaw_error NFAR   -6.283185 -1.570954 -1.570954 -0.698132 
+yaw_error NNEAR  -1.570954 -0.698132 -0.698132 -0.174533 
+yaw_error NCLOSE -0.698132 -0.174533 -0.174533  0
+yaw_error ZERO    -0.174533 0          0        +0.174533
+yaw_error PCLOSE  0        +0.174533 +0.174533 +0.698132
+yaw_error PNEAR  +0.174533 +0.698132 +0.698132 +1.570954
+yaw_error PFAR   +0.698132 +1.570954 +1.570954 +6.283185
+

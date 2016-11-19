@@ -1,0 +1,31 @@
+YAW_FAR_01 if uav_goal_dist is FAR and yaw_error is NFAR   then Oyaw is PMAX
+YAW_FAR_02 if uav_goal_dist is FAR and yaw_error is NNEAR  then Oyaw is PMAX
+YAW_FAR_03 if uav_goal_dist is FAR and yaw_error is NCLOSE then Oyaw is PMIN
+YAW_FAR_04 if uav_goal_dist is FAR and yaw_error is ZERO    then Oyaw is ZERO
+YAW_FAR_05 if uav_goal_dist is FAR and yaw_error is PCLOSE then Oyaw is NMIN
+YAW_FAR_06 if uav_goal_dist is FAR and yaw_error is PNEAR  then Oyaw is NMAX
+YAW_FAR_07 if uav_goal_dist is FAR and yaw_error is PFAR   then Oyaw is NMAX
+
+YAW_MID_01 if uav_goal_dist is MID and yaw_error is NFAR   then Oyaw is PMAX
+YAW_MID_02 if uav_goal_dist is MID and yaw_error is NNEAR  then Oyaw is PMAX
+YAW_MID_03 if uav_goal_dist is MID and yaw_error is NCLOSE then Oyaw is PMIN
+YAW_MID_04 if uav_goal_dist is MID and yaw_error is ZERO    then Oyaw is ZERO
+YAW_MID_05 if uav_goal_dist is MID and yaw_error is PCLOSE then Oyaw is NMIN
+YAW_MID_06 if uav_goal_dist is MID and yaw_error is PNEAR  then Oyaw is NMAX
+YAW_MID_07 if uav_goal_dist is MID and yaw_error is PFAR   then Oyaw is NMAX
+
+YAW_NEAR_01 if uav_goal_dist is NEAR and yaw_error is NFAR   then Oyaw is PMAX
+YAW_NEAR_02 if uav_goal_dist is NEAR and yaw_error is NNEAR  then Oyaw is PMID
+YAW_NEAR_03 if uav_goal_dist is NEAR and yaw_error is NCLOSE then Oyaw is PMIN
+YAW_NEAR_04 if uav_goal_dist is NEAR and yaw_error is ZERO    then Oyaw is ZERO
+YAW_NEAR_05 if uav_goal_dist is NEAR and yaw_error is PCLOSE then Oyaw is NMIN
+YAW_NEAR_06 if uav_goal_dist is NEAR and yaw_error is PNEAR  then Oyaw is NMID
+YAW_NEAR_07 if uav_goal_dist is NEAR and yaw_error is PFAR   then Oyaw is NMAX
+
+YAW_ZERO_01 if uav_goal_dist is ZERO and yaw_error is NFAR   then Oyaw is ZERO 
+YAW_ZERO_02 if uav_goal_dist is ZERO and yaw_error is NNEAR  then Oyaw is ZERO
+YAW_ZERO_03 if uav_goal_dist is ZERO and yaw_error is NCLOSE then Oyaw is ZERO
+YAW_ZERO_04 if uav_goal_dist is ZERO and yaw_error is ZERO    then Oyaw is ZERO
+YAW_ZERO_05 if uav_goal_dist is ZERO and yaw_error is PCLOSE then Oyaw is ZERO
+YAW_ZERO_06 if uav_goal_dist is ZERO and yaw_error is PNEAR  then Oyaw is ZERO
+YAW_ZERO_07 if uav_goal_dist is ZERO and yaw_error is PFAR   then Oyaw is ZERO

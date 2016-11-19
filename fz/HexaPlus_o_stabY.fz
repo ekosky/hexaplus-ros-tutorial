@@ -1,0 +1,8 @@
+Opitch NMAX -0.10  -0.075 -0.075 -0.05
+Opitch NMID -0.075 -0.05  -0.05  -0.03
+Opitch NMIN -0.05  -0.03  -0.03   0
+Opitch ZERO  -0.03   0      0      0.03
+Opitch PMIN  0      0.03   0.03   0.05
+Opitch PMID  0.03   0.05   0.05   0.075
+Opitch PMAX  0.05   0.075  0.075  0.10
+

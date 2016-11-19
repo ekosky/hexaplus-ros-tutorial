@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ekosky/catkin_ws_indigo/src/hexaplus_tutorial/devel/setup.sh

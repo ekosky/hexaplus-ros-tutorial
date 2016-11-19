@@ -1,0 +1,14 @@
+uavZ_error NFAR  -1001 -3.00 -3.00 -1.50
+uavZ_error NMID  -3.00 -1.50 -1.50 -0.50
+uavZ_error NNEAR -1.50 -0.05 -0.05  0
+uavZ_error ZERO   -0.05  0     0     0.05
+uavZ_error PNEAR  0     0.05  0.05  1.50 
+uavZ_error PMID   0.50  1.50  1.50  3.00 
+uavZ_error PFAR   1.50  3.00  3.00  1001 
+#
+speed_uavZ NFAST  -1000000 -1.00000 -1.00000 -0.50000
+speed_uavZ NSLOW  -1.00000 -0.50000 -0.50000  0.00000
+speed_uavZ ZERO    -0.50000  0.00000  0.00000  0.50000
+speed_uavZ PSLOW   0.00000  0.50000  0.50000  1.00000
+speed_uavZ PFAST   0.50000  1.00000  1.00000  1000000
+

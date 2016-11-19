@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: hexaplus_tutorial
+Description: Description of hexaplus_tutorial
+Version: 0.0.1
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lhexaplus_tutorial -lCATKIN_DEPEND -lroscpp -lstd_msgs -lroslib
+Requires: 

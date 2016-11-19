@@ -1,0 +1,8 @@
+prefix=/home/ekosky/catkin_ws_indigo/src/hexaplus_tutorial/devel
+
+Name: hexaplus_tutorial
+Description: Description of hexaplus_tutorial
+Version: 0.0.1
+Cflags: -I/home/ekosky/catkin_ws_indigo/src/hexaplus_tutorial/include
+Libs: -L/home/ekosky/catkin_ws_indigo/src/hexaplus_tutorial/devel/lib -lhexaplus_tutorial -lCATKIN_DEPEND -lroscpp -lstd_msgs -lroslib
+Requires: 

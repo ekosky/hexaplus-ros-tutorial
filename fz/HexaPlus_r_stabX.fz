@@ -1,0 +1,44 @@
+#
+STABX_PFAR_01 if roll_error is PFAR and accelY is PFAST then Oroll is NMAX
+STABX_PFAR_02 if roll_error is PFAR and accelY is PSLOW then Oroll is NMAX
+STABX_PFAR_03 if roll_error is PFAR and accelY is ZERO   then Oroll is NMAX
+STABX_PFAR_04 if roll_error is PFAR and accelY is NSLOW then Oroll is NMAX 
+STABX_PFAR_05 if roll_error is PFAR and accelY is NFAST then Oroll is NMAX 
+
+STABX_PNEAR_01 if roll_error is PNEAR and accelY is PFAST then Oroll is NMIN
+STABX_PNEAR_02 if roll_error is PNEAR and accelY is PSLOW then Oroll is NMIN
+STABX_PNEAR_03 if roll_error is PNEAR and accelY is ZERO   then Oroll is NMID
+STABX_PNEAR_04 if roll_error is PNEAR and accelY is NSLOW then Oroll is NMID
+STABX_PNEAR_05 if roll_error is PNEAR and accelY is NFAST then Oroll is NMID
+
+STABX_PCLOSE_01 if roll_error is PCLOSE and accelY is PFAST then Oroll is ZERO 
+STABX_PCLOSE_02 if roll_error is PCLOSE and accelY is PSLOW then Oroll is ZERO 
+STABX_PCLOSE_03 if roll_error is PCLOSE and accelY is ZERO   then Oroll is NMIN 
+STABX_PCLOSE_04 if roll_error is PCLOSE and accelY is NSLOW then Oroll is NMIN
+STABX_PCLOSE_05 if roll_error is PCLOSE and accelY is NFAST then Oroll is NMIN
+#
+STABX_ZERO_01 if roll_error is ZERO and accelY is PFAST then Oroll is PMIN
+STABX_ZERO_02 if roll_error is ZERO and accelY is PSLOW then Oroll is ZERO 
+STABX_ZERO_03 if roll_error is ZERO and accelY is ZERO   then Oroll is ZERO
+STABX_ZERO_04 if roll_error is ZERO and accelY is NSLOW then Oroll is ZERO 
+STABX_ZERO_05 if roll_error is ZERO and accelY is NFAST then Oroll is NMIN
+#
+STABX_NCLOSE_01 if roll_error is NCLOSE and accelY is NFAST then Oroll is ZERO 
+STABX_NCLOSE_02 if roll_error is NCLOSE and accelY is NSLOW then Oroll is ZERO 
+STABX_NCLOSE_03 if roll_error is NCLOSE and accelY is ZERO   then Oroll is PMIN 
+STABX_NCLOSE_04 if roll_error is NCLOSE and accelY is PSLOW then Oroll is PMIN
+STABX_NCLOSE_05 if roll_error is NCLOSE and accelY is PFAST then Oroll is PMIN
+
+STABX_NNEAR_01 if roll_error is NNEAR and accelY is PFAST then Oroll is PMID
+STABX_NNEAR_02 if roll_error is NNEAR and accelY is PSLOW then Oroll is PMID
+STABX_NNEAR_03 if roll_error is NNEAR and accelY is ZERO   then Oroll is PMID
+STABX_NNEAR_04 if roll_error is NNEAR and accelY is NSLOW then Oroll is PMIN
+STABX_NNEAR_05 if roll_error is NNEAR and accelY is NFAST then Oroll is PMIN
+
+STABX_NFAR_01 if roll_error is NFAR and accelY is PFAST then Oroll is PMAX
+STABX_NFAR_02 if roll_error is NFAR and accelY is PSLOW then Oroll is PMAX
+STABX_NFAR_03 if roll_error is NFAR and accelY is ZERO   then Oroll is PMAX
+STABX_NFAR_04 if roll_error is NFAR and accelY is NSLOW then Oroll is PMAX 
+STABX_NFAR_05 if roll_error is NFAR and accelY is NFAST then Oroll is PMAX 
+
+
